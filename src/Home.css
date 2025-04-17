@@ -1,0 +1,40 @@
+ .home {
+    display: flex;
+    justify-content: center;
+    background-color: #f3f3f3;
+    padding-bottom: 30px;
+}
+
+.home-container {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+
+.home-image {
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    object-fit: cover;
+    margin-bottom: -80px;
+    z-index: -1;
+  
+    /* Gradient mask from solid to transparent */
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0)100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0)100%); /* For Safari */
+  }
+  
+
+.home-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0 5px;
+    padding: 20px;
+    z-index: 1;
+    position: relative;
+    gap: 20px; /* space between products */
+} 
